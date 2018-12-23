@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const port = process.env.PORT || 3000
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
@@ -21,6 +22,6 @@ app.get('/',(req, res)=>{
 app.get('/about',(req, res)=>{
     res.send('About u to modify');
 });
-app.listen(3000,()=>{
-    console.log('The server start up on port: 3000')
+app.listen(port,()=>{
+    console.log('The server start up on port: '+port);
 });
