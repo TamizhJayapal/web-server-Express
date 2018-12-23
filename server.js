@@ -15,7 +15,7 @@ app.get('/',(req, res)=>{
     res.send({
         name:'tamizh',
         like: [
-            'Constitutional law and Human rights'
+            'Indian Constitutional law and Human rights'
         ]
     });
 });
